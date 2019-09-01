@@ -3,7 +3,7 @@ package sda.hibernate.entity.przyklad1;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-
+//tutaj jest pokazane jak jest źle. Że jest tyle pól w jednej klasie
 @Entity
 @Table(name = "uzytkownik")
 public class Uzytkownik {

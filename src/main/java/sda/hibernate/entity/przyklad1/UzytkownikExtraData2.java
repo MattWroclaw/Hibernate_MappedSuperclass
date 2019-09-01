@@ -15,6 +15,11 @@ public class UzytkownikExtraData2 {
     private String nazwisko;
     @Embedded
     private Adres adresZameldowania;
+
+
+//   to poniżej dotyczy adresuKOrespondencyjnego. Trzeba mapować, bo inaczej po stworzeniu
+//    adresuZameldowania Hibernate będzie jeszcze raz tworzył to samo przy adresieKorespondecyjnym
+//    A gdyby było więcej, to i tak się mapuje z tego pierwotnego
     @Embedded
     @AttributeOverrides({
             @AttributeOverride(name = "ulucaZam", column = @Column(name = "ulucaKor")),
